@@ -1,0 +1,78 @@
+$primary: #58B3D3;
+$muted: #9BA2B1;
+$light: #F1F2F4;
+$warning: #FFA500;
+$danger: #FF3B30;
+$success: #34C759;
+$body: #2E3035;
+$purple: #AF52DE;
+$white: #fff;
+
+$text: left, right, center, justify;
+$fontWeight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+$fontSizes: (
+        'xs': (
+                'fs': 0.75rem,
+                'lh': 1rem
+        ),
+        'sm': (
+                'fs': 0.875rem,
+                'lh': 1.25rem
+        ),
+        'base': (
+                'fs': 1rem,
+                'lh': 1.5rem
+        ),
+        'lg': (
+                'fs': 1.125rem,
+                'lh': 1.75rem
+        ),
+        "xl": (
+                'fs': 1.25rem,
+                'lh': 1.75rem
+        ),
+        "2xl": (
+                'fs': 1.5rem,
+                'lh': 2rem
+        ),
+        "3xl": (
+                'fs': 1.875rem,
+                'lh': 2.25rem
+        ),
+        "4xl": (
+                'fs': 2.25rem,
+                'lh': 2.5rem
+        ),
+        "5xl":(
+                'fs': 3rem,
+                'lh': 1
+        ),
+);
+$sizes: (
+        0: 0,
+        1: .25rem,
+        2: .5rem,
+        3: 1rem,
+        4: 1.5rem,
+        5: 3rem
+);
+$boxSizes: (
+        0: 0,
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%
+);
+$colors: (
+        "primary": $primary,
+        "muted": $muted,
+        "light": $light,
+        "warning": $warning,
+        "success": $success,
+        "danger": $danger,
+        "white" :$white,
+        "body": $body
+);
+
+
+

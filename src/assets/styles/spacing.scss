@@ -1,0 +1,142 @@
+@import "./variable.scss";
+
+@mixin spacing($mSize) {
+  @each $key, $size in $sizes {
+    .m-#{$mSize}-#{$key} {
+      margin: $size !important;
+    }
+    .ml-#{$mSize}-#{$key} {
+      margin-left: $size !important;
+    }
+    .mr-#{$mSize}-#{$key} {
+      margin-right: $size !important;
+    }
+    .mt-#{$mSize}-#{$key} {
+      margin-top: $size !important;
+    }
+    .mb-#{$mSize}-#{$key} {
+      margin-bottom: $size !important;
+    }
+    .mx-#{$mSize}-#{$key} {
+      margin-left: $size !important;
+      margin-right: $size !important;
+    }
+    .my-#{$mSize}-#{$key} {
+      margin-top: $size !important;
+      margin-bottom: $size !important;
+    }
+    .p-#{$mSize}-#{$key} {
+      padding: $size !important;
+    }
+    .pl-#{$mSize}-#{$key} {
+      padding-left: $size !important;
+    }
+    .pr-#{$mSize}-#{$key} {
+      padding-right: $size !important;
+    }
+    .pt-#{$mSize}-#{$key} {
+      padding-top: $size !important;
+    }
+    .pb-#{$mSize}-#{$key} {
+      padding-bottom: $size !important;
+    }
+    .px-#{$mSize}-#{$key} {
+      padding-left: $size !important;
+      padding-right: $size !important;
+    }
+    .py-#{$mSize}-#{$key} {
+      padding-top: $size !important;
+      padding-bottom: $size !important;
+    }
+  }
+}
+
+@each $size-name, $size-value in $fontSizes {
+  $font-size: map-get($size-value, 'fs');
+  $line-height: map-get($size-value, 'lh');
+  .text-#{$size-name} {
+    font-size: $font-size;
+    line-height: $line-height;
+  }
+}
+
+@each $w in $fontWeight {
+  .text-#{$w} {
+    font-weight: $w;
+  }
+}
+
+@each $t in $text {
+  .text-#{$t} {
+    text-align: $t;
+  }
+}
+
+@each $key, $value in $colors {
+  .text-#{$key} {
+    color: $value !important;
+  }
+  .bg-#{$key} {
+    background-color: $value !important;
+  }
+  .bg-#{$key}-opacity {
+    background-color: rgba($value, .1) !important;
+  }
+}
+
+@each $key, $size in $sizes {
+  .m-#{$key} {
+    margin: $size !important;
+  }
+  .ml-#{$key} {
+    margin-left: $size !important;
+  }
+  .mr-#{$key} {
+    margin-right: $size !important;
+  }
+  .mt-#{$key} {
+    margin-top: $size !important;
+  }
+  .mb-#{$key} {
+    margin-bottom: $size !important;
+  }
+  .mx-#{$key} {
+    margin-left: $size !important;
+    margin-right: $size !important;
+  }
+  .my-#{$key} {
+    margin-top: $size !important;
+    margin-bottom: $size !important;
+  }
+  .p-#{$key} {
+    padding: $size !important;
+  }
+  .pl-#{$key} {
+    padding-left: $size !important;
+  }
+  .pr-#{$key} {
+    padding-right: $size !important;
+  }
+  .pt-#{$key} {
+    padding-top: $size !important;
+  }
+  .pb-#{$key} {
+    padding-bottom: $size !important;
+  }
+  .px-#{$key} {
+    padding-left: $size !important;
+    padding-right: $size !important;
+  }
+  .py-#{$key} {
+    padding-top: $size !important;
+    padding-bottom: $size !important;
+  }
+}
+
+@each $key, $size in $sizes {
+  .rounded-#{$key} {
+    border-radius: $size !important;
+  }
+}
+
+
